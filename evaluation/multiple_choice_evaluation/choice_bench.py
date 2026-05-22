@@ -127,11 +127,27 @@ def main():
     # 정답지가 포함된 Ground Truth JSON 경로
     json_path = "/NHNHOME/WORKSPACE/0226010268_A/yhlee/MLVU/data/MLVU_videos/test-ground-truth/test_mcq_gt.json"
     
+    '''
     save_path = f"./test_all_choice"
     result_path = f"bench_all.json"
-
+    ''' ######################################################################################################################################
+    kv_mode = int(os.getenv("KV_MODE", 3))
+    kv_budget = int(os.getenv("KV_BUDGET", 1024))
+    alpha = os.getenv("KV_ALPHA", "0.5")
+    gamma = os.getenv("KV_GAMMA", "0.9")
+    tau = os.getenv("KV_TAU", "3.0")
+    
+    if kv_mode in [3, 6, 8, 9]:
+        param_str = f"m{kv_mode}_b{kv_budget}_a{alpha}_g{gamma}_t{tau}"
+    else:
+        param_str = f"m{kv_mode}_b{kv_budget}"
+        
+    save_path = f"./test_all_choice_{param_str}"
+    result_path = f"bench_all_{param_str}.json"
+    
+    
+    
     dataset = MLVU(json_path, video_base_dir)
-
 
     '''
     load your model
@@ -180,6 +196,8 @@ def main():
 
         input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).to(model.device)
 
+
+        '''
         model.config.kv_mode = 3
         model.config.kv_budget = 1024
         model.config.kv_window = 32
@@ -187,6 +205,22 @@ def main():
         model.config.kv_alpha = 0.5
         model.config.kv_tau = 3.0
         model.config.kv_gamma = 0.9
+        ''' ######################################################################################################################################
+        model.config.kv_mode = int(os.getenv("KV_MODE", 3))
+        model.config.kv_budget = int(os.getenv("KV_BUDGET", 1024))
+        model.config.kv_window = int(os.getenv("KV_WINDOW", 32))
+        model.config.kv_sink = int(os.getenv("KV_SINK", 4))
+        model.config.kv_alpha = float(os.getenv("KV_ALPHA", 0.5))
+        model.config.kv_tau = float(os.getenv("KV_TAU", 3.0))
+        model.config.kv_gamma = float(os.getenv("KV_GAMMA", 0.9))
+        
+        
+        
+        
+        
+        
+        
+        
         
          
         # 5. 추론 실행 (🔥 V-NIAH 완벽 이식: 2048 청크 우회 및 한 번에 밀어넣기)

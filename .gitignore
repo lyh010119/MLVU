@@ -3,6 +3,7 @@
 data/
 **/MLVU_videos/
 **/MLVU_Test/
+multiple_choice_evaluation/
 
 # 모델 가중치 파일 차단
 weights/
