@@ -1,0 +1,63 @@
+cd /NHNHOME/WORKSPACE/0226010268_A/yhlee/MLVU/evaluation
+
+We evaluate on the official MLVU-Test split using test_mcq_gt.json, test_ssc_gt.json, and test_vs_gt.json, with videos from MLVU_Test/video.
+
+KV_MODE=1 \
+KV_BUDGET=0 \
+CUDA_VISIBLE_DEVICES=0 \
+python generation_evaluation/open_bench.py \
+  --output_dir ./generation_outputs \
+  --num_frames 256 \
+  --max_new_tokens 512
+
+
+export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+
+python generation_evaluation/evaluate_ssc.py \
+  --pred_path ./generation_outputs/subplot_all.json \
+  --output_dir ./eval_subplot \
+  --output_json ./eval_subplot.json
+
+python generation_evaluation/calculate.py --path ./eval_subplot
+
+python generation_evaluation/evaluate_summary.py \
+  --pred_path ./generation_outputs/summary_all.json \
+  --output_dir ./eval_summary \
+  --output_json ./eval_summary.json
+
+python generation_evaluation/calculate_sum.py --path ./eval_summary
+
+
+
+
+
+
+
+# Free text-overlap metrics. These are not official MLVU GPT-4 judge scores.
+python generation_evaluation/evaluate_text_metrics.py \
+  --pred_path ./generation_outputs/subplot_all.json \
+  --output_json ./generation_outputs/subplot_text_metrics.json
+
+python generation_evaluation/evaluate_text_metrics.py \
+  --pred_path ./generation_outputs/summary_all.json \
+  --output_json ./generation_outputs/summary_text_metrics.json
+
+
+# Local LLM judge. These are not official MLVU GPT-4 judge scores.
+# Pick a judge model that fits your GPUs. Examples:
+#   Qwen/Qwen2.5-7B-Instruct
+#   Qwen/Qwen2.5-14B-Instruct
+#   Qwen/Qwen2.5-72B-Instruct
+CUDA_VISIBLE_DEVICES=0 \
+python generation_evaluation/evaluate_local_judge.py \
+  --pred_path ./generation_outputs/subplot_all.json \
+  --task subplot \
+  --model_path Qwen/Qwen2.5-7B-Instruct \
+  --output_json ./generation_outputs/subplot_local_judge.json
+
+CUDA_VISIBLE_DEVICES=0 \
+python generation_evaluation/evaluate_local_judge.py \
+  --pred_path ./generation_outputs/summary_all.json \
+  --task summary \
+  --model_path Qwen/Qwen2.5-7B-Instruct \
+  --output_json ./generation_outputs/summary_local_judge.json

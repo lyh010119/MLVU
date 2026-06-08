@@ -1,10 +1,10 @@
-import openai
 import os
 import argparse
 import json
 import ast
 from multiprocessing.pool import Pool
 from tqdm import tqdm
+from openai import OpenAI
 
 def parse_args():
     parser = argparse.ArgumentParser(description="ssc-evaluation-gpt-4")
@@ -17,7 +17,7 @@ def parse_args():
     return args
 
 
-def get_scoring_points(score_points="MLVU_all/json/8_sub_scene.json"):
+def get_scoring_points(score_points="/NHNHOME/WORKSPACE/0226010268_A/yhlee/MLVU/data/MLVU_videos/test-ground-truth/test_ssc_gt.json"):
     q_s_dict = {}
     all_data = json.load(open(score_points, "r"))
     for data in all_data:
@@ -27,12 +27,13 @@ def get_scoring_points(score_points="MLVU_all/json/8_sub_scene.json"):
     return q_s_dict
 
 
-def annotate(prediction_set, caption_files, output_dir):
+def annotate(prediction_set, caption_files, output_dir, api_key):
     """
     Evaluates question and answer pairs using GPT-4
     Returns a score for correctness.
     """
     q_s_dict = get_scoring_points()
+    client = OpenAI(api_key=api_key or os.getenv("OPENAI_API_KEY"))
     for file in tqdm(caption_files):
         print("#############",file)
         key = file[:-5] # Strip file extension
@@ -44,7 +45,7 @@ def annotate(prediction_set, caption_files, output_dir):
         scoring_points = q_s_dict[question]
         try:
             # Compute the correctness score
-            completion = openai.ChatCompletion.create(
+            completion = client.chat.completions.create(
                 temperature=0,
                 model="gpt-4-turbo",
                 messages = [
@@ -88,7 +89,7 @@ def annotate(prediction_set, caption_files, output_dir):
 
             )
             # Convert response to a Python dictionary.
-            response_message = completion["choices"][0]["message"]["content"]
+            response_message = completion.choices[0].message.content
             # print("#############",response_message)
          
           
@@ -158,8 +159,6 @@ def main():
         qa_set = {"q": question, "a": answer, "pred": pred}
         prediction_set[id] = qa_set
 
-    # Set the OpenAI API key.
-    openai.api_key = args.api_key
     num_tasks = args.num_tasks
 
     # While loop to ensure that all captions are processed.
@@ -182,7 +181,7 @@ def main():
             # Split tasks into parts.
             part_len = len(incomplete_files) // num_tasks
             all_parts = [incomplete_files[i:i + part_len] for i in range(0, len(incomplete_files), part_len)]
-            task_args = [(prediction_set, part, args.output_dir) for part in all_parts]
+            task_args = [(prediction_set, part, args.output_dir, args.api_key) for part in all_parts]
 
             # Use a pool of workers to process the files in parallel.
             with Pool(processes=1) as pool:
@@ -234,4 +233,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

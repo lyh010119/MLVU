@@ -1,167 +1,198 @@
-import torch
-from torchvision import transforms
+import argparse
 import json
-from tqdm import tqdm
 import os
+import sys
+from pathlib import Path
+
 import numpy as np
+import torch
+from decord import VideoReader, cpu
 from torch.utils.data import Dataset
+from tqdm import tqdm
+
+
+LONGVA_ROOT = Path("/NHNHOME/WORKSPACE/0226010268_A/yhlee/LongVA")
+if str(LONGVA_ROOT) not in sys.path:
+    sys.path.append(str(LONGVA_ROOT))
+
+from longva.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX
+from longva.conversation import conv_templates
+from longva.mm_utils import tokenizer_image_token
+from longva.model.builder import load_pretrained_model
+
+
+def load_video(video_path, num_frames=256):
+    vr = VideoReader(str(video_path), ctx=cpu(0))
+    total_frames = len(vr)
+    if total_frames <= 0:
+        raise ValueError(f"empty video: {video_path}")
+    frame_indices = np.linspace(0, total_frames - 1, num_frames, dtype=int)
+    return vr.get_batch(frame_indices).asnumpy()
 
 
 def get_prompt2(conv):
     ret = conv.system + conv.sep
-    count = 0
-    for role, message in conv.messages:
-        count += 1
-        if count == len(conv.messages):
-            ret += role + ": " + message
+    for idx, (role, message) in enumerate(conv.messages):
+        is_last = idx == len(conv.messages) - 1
+        if is_last:
+            ret += role + ": " + (message if message is not None else "")
+        elif message:
+            ret += role + ": " + message + conv.sep
         else:
-            if message:
-                ret += role + ": " + message + conv.sep
-            else:
-                ret += role + ":"
+            ret += role + ":"
     return ret
 
-class MLVU(Dataset):
-    def __init__(self, data_dir, data_list):
+
+class MLVUGeneration(Dataset):
+    def __init__(self, gt_dir, video_dir, tasks, limit=None):
         self.data_list = []
-        for k, v in data_list.items():
-            with open(os.path.join(data_dir, v[0]), 'r') as f:
-                json_data = json.load(f)
-            for data in json_data:
-                self.data_list.append({
-                    'task_type': k,
-                    'prefix': v[1],
-                    'data_type': v[2],
-                    'data': data
-                })
-        
-    
-    def __str__(self):
-        len_list = {}
-        option_list = {}
-        for data in self.data_list:
-            if data['task_type'] not in len_list:
-                len_list[data['task_type']] = 0
-            len_list[data['task_type']] += 1
-            if data['task_type'] not in option_list:
-                option_list[data['task_type']] = 0
-            option_list[data['task_type']] += len(data['data']['candidates'])
-        
-        correct = 0
-        total = 0
-        res = f"There are {len(self.data_list)} videos as follow:\n"
-        for k, v in len_list.items():
-            correct += len_list[k]
-            total += option_list[k]
-            res += f"{v} for {k} ({option_list[k]} options => {len_list[k]/option_list[k]*100:.2f}%)\n"
-            correct = correct + 1 / option_list[k]
-        res += f"Total random accuracy: {correct/total*100:.2f}%"
-        return res.rstrip()
-        
-    def __len__(self):
-        return len(self.data_list)
-    
-    def get_index(self, bound, fps, max_frame, first_idx=0):
-        if bound:
-            start, end = bound[0], bound[1]
-        else:
-            start, end = -100000, 100000
-        start_idx = max(first_idx, round(start * fps))
-        end_idx = min(round(end * fps), max_frame)
-        seg_size = float(end_idx - start_idx) / self.num_segments
-        frame_indices = np.array([
-            int(start_idx + (seg_size / 2) + np.round(seg_size * idx))
-            for idx in range(self.num_segments)
-        ])
-        return frame_indices
-    
-
-    def qa_template(self, data):
-        question = f"{data['question']}"
-        answer = data['answer']
-        return question, answer
-
-
-    def __getitem__(self, idx):
-        video_path = os.path.join(self.data_list[idx]['prefix'], self.data_list[idx]['data']['video'])
-        question, answer = self.qa_template(self.data_list[idx]['data'])
-            
-        return {
-            'video': video_path, 
-            'question': question, 
-            'answer': answer,
-            'task_type': self.data_list[idx]['task_type']
+        task_specs = {
+            "subPlot": "test_ssc_gt.json",
+            "summary": "test_vs_gt.json",
         }
 
+        for task in tasks:
+            json_path = Path(gt_dir) / task_specs[task]
+            with open(json_path, "r") as f:
+                json_data = json.load(f)
+            if limit is not None:
+                json_data = json_data[:limit]
+
+            for item in json_data:
+                video_name = item["video"]
+                video_path = Path(video_dir) / video_name
+                if not video_path.exists():
+                    raise FileNotFoundError(f"video not found: {video_path}")
+                self.data_list.append(
+                    {
+                        "task_type": task,
+                        "video_name": video_name,
+                        "video": video_path,
+                        "question": item["question"],
+                        "answer": item["answer"],
+                    }
+                )
+
+    def __len__(self):
+        return len(self.data_list)
+
+    def __getitem__(self, idx):
+        return self.data_list[idx]
+
+
+def set_kv_config(model):
+    model.config.kv_mode = int(os.getenv("KV_MODE", 1))
+    model.config.kv_budget = int(os.getenv("KV_BUDGET", 0))
+    model.config.kv_window = int(os.getenv("KV_WINDOW", 32))
+    model.config.kv_sink = int(os.getenv("KV_SINK", 4))
+    model.config.kv_alpha = float(os.getenv("KV_ALPHA", 0.5))
+    model.config.kv_tau = float(os.getenv("KV_TAU", 3.0))
+    model.config.kv_gamma = float(os.getenv("KV_GAMMA", 0.9))
+    model.config.kv_kernel_size = int(os.getenv("KV_KERNEL_SIZE", 7))
+
+
+def build_prompt(question):
+    conv = conv_templates["qwen_1_5"].copy()
+    conv.system = (
+        "Carefully watch this video and pay attention to every detail. "
+        "Based on your observations, answer the given questions. "
+        "Answer in English only."
+    )
+    
+    conv.append_message(conv.roles[0], DEFAULT_IMAGE_TOKEN + "\n" + question)
+    conv.append_message(conv.roles[1], None)
+    return get_prompt2(conv)
+
+
+def run_generation(model, tokenizer, image_processor, example, num_frames, max_new_tokens):
+    video_np = load_video(example["video"], num_frames=num_frames)
+    video_tensor = image_processor.preprocess(video_np, return_tensors="pt")["pixel_values"]
+    video_tensor = video_tensor.to(model.device, dtype=torch.float16)
+
+    prompt = build_prompt(example["question"])
+    input_ids = tokenizer_image_token(
+        prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt"
+    ).unsqueeze(0).to(model.device)
+
+    with torch.inference_mode():
+        output_ids = model.generate(
+            input_ids,
+            images=[video_tensor],
+            modalities=["video"],
+            do_sample=False,
+            temperature=0.0,
+            num_beams=1,
+            max_new_tokens=max_new_tokens,
+            use_cache=True,
+        )
+
+    return tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--gt_dir",
+        default="/NHNHOME/WORKSPACE/0226010268_A/yhlee/MLVU/data/MLVU_videos/test-ground-truth",
+    )
+    parser.add_argument(
+        "--video_dir",
+        default="/NHNHOME/WORKSPACE/0226010268_A/yhlee/MLVU/data/MLVU_videos/MLVU_Test/video",
+    )
+    parser.add_argument("--output_dir", default=".")
+    parser.add_argument("--model_path", default="lmms-lab/LongVA-7B")
+    parser.add_argument("--num_frames", type=int, default=256)
+    parser.add_argument("--max_new_tokens", type=int, default=512)
+    parser.add_argument("--tasks", default="subPlot,summary")
+    parser.add_argument("--limit", type=int, default=None)
+    return parser.parse_args()
 
 
 def main():
+    args = parse_args()
+    tasks = [task.strip() for task in args.tasks.split(",") if task.strip()]
+    for task in tasks:
+        if task not in {"subPlot", "summary"}:
+            raise ValueError(f"unknown task: {task}")
 
-    data_list = {
-    "subPlot": ("8_sub_scene.json", f"MLVU_all/video/subPlot", "video", False),
-    "summary": ("9_summary.json", f"MLVU_all/video/summary", "video", False)
-    }
-   
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    data_dir = f"MLVU_all/json"
-   
+    dataset = MLVUGeneration(args.gt_dir, args.video_dir, tasks, limit=args.limit)
 
-    dataset = MLVU(data_dir, data_list)
+    tokenizer, model, image_processor, _ = load_pretrained_model(
+        model_path=args.model_path,
+        model_base=None,
+        model_name="llava-qwen",
+        device_map="auto",
+    )
+    set_kv_config(model)
 
-    '''
-    load your model
-    '''
-
-    res_list_subplot = []
-    res_list_summary = []
+    results = {"subPlot": [], "summary": []}
     for example in tqdm(dataset):
-        video_path=example["video"]
-        quesiotn=example["question"]
+        pred = run_generation(
+            model,
+            tokenizer,
+            image_processor,
+            example,
+            num_frames=args.num_frames,
+            max_new_tokens=args.max_new_tokens,
+        )
+        row = {
+            "video_name": example["video_name"],
+            "Q": example["question"],
+            "A": example["answer"],
+            "pred": pred,
+        }
+        results[example["task_type"]].append(row)
 
-        '''
-        modify the conv_templates like the following tempates
-        conv_mode = "llava_v1"
-        conv = conv_templates[conv_mode].copy()
-        roles = conv.roles
-        inp = [DEFAULT_VIDEO_TOKEN] '\n' + question  # noted different models take different concatenation ways
-        conv.system="Carefully watch this video and pay attention to every detail. Based on your observations, answer the given questions."
-        conv.append_message(conv.roles[0], inp)
-        conv.append_message(conv.roles[1], None)
-        prompt=get_prompt(conv)
-        '''
-
-        '''
-        run the inference code of MLLMs
-        pred=run(video_path,conv_mode,prompt,...)
-        '''
-    
-        gt = example['answer']
-
-        if task_type=="subPlot":
-            result={}
-            result["video_name"]=example['video_path'].split("/")[-1]
-            result['Q']=example['question']
-            result['A']=gt
-            result['pred']=pred
-            res_list_subplot.append(result)
-    
-        if task_type=="summary":
-            result={}
-            result["video_name"]=example['video_path'].split("/")[-1]
-            result['Q']=example['question']
-            result['A']=gt
-            result['pred']=pred
-            res_list_summary.append(result)
+    if "subPlot" in tasks:
+        with open(output_dir / "subplot_all.json", "w") as f:
+            json.dump(results["subPlot"], f, indent=2, ensure_ascii=False)
+    if "summary" in tasks:
+        with open(output_dir / "summary_all.json", "w") as f:
+            json.dump(results["summary"], f, indent=2, ensure_ascii=False)
 
 
-
-    with open(f"subplot_all.json", "w") as f:
-        json.dump(res_list_subplot, f)
-
-    with open(f"summary_all.json", "w") as f:
-        json.dump(res_list_summary, f)
-
-      
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
