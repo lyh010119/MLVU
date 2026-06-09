@@ -91,13 +91,21 @@ def set_kv_config(model):
     model.config.kv_kernel_size = int(os.getenv("KV_KERNEL_SIZE", 7))
 
 
-def build_prompt(question):
+def build_prompt(question, task_type):
     conv = conv_templates["qwen_1_5"].copy()
-    conv.system = (
-        "Carefully watch this video and pay attention to every detail. "
-        "Based on your observations, answer the given questions. "
-        "Answer in English only."
-    )
+    if task_type == "summary":
+        conv.system = (
+            "Carefully watch this video and pay attention to every detail. "
+            "Answer in English only. Provide a detailed video summary in one coherent paragraph. "
+            "Cover the main events, characters, scene changes, actions, and outcomes. "
+            "Do not answer briefly."
+        )
+    else:
+        conv.system = (
+            "Carefully watch this video and pay attention to every detail. "
+            "Answer in English only. Provide a detailed description in 2-4 complete sentences. "
+            "Include all visible actions, objects, and outcomes relevant to the question."
+        )
     
     conv.append_message(conv.roles[0], DEFAULT_IMAGE_TOKEN + "\n" + question)
     conv.append_message(conv.roles[1], None)
@@ -109,7 +117,7 @@ def run_generation(model, tokenizer, image_processor, example, num_frames, max_n
     video_tensor = image_processor.preprocess(video_np, return_tensors="pt")["pixel_values"]
     video_tensor = video_tensor.to(model.device, dtype=torch.float16)
 
-    prompt = build_prompt(example["question"])
+    prompt = build_prompt(example["question"], example["task_type"])
     input_ids = tokenizer_image_token(
         prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt"
     ).unsqueeze(0).to(model.device)

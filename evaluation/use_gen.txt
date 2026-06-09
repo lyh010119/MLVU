@@ -2,13 +2,28 @@ cd /NHNHOME/WORKSPACE/0226010268_A/yhlee/MLVU/evaluation
 
 We evaluate on the official MLVU-Test split using test_mcq_gt.json, test_ssc_gt.json, and test_vs_gt.json, with videos from MLVU_Test/video.
 
-KV_MODE=1 \
-KV_BUDGET=0 \
+KV_MODE=2 \
+KV_BUDGET=10000 \
 CUDA_VISIBLE_DEVICES=0 \
 python generation_evaluation/open_bench.py \
   --output_dir ./generation_outputs \
   --num_frames 256 \
   --max_new_tokens 512
+
+
+python generation_evaluation/evaluate_text_metrics.py \
+  --pred_path ./generation_outputs/subplot_all.json \
+  --output_json ./generation_outputs/subplot_text_metrics.json
+
+python generation_evaluation/evaluate_text_metrics.py \
+  --pred_path ./generation_outputs/summary_all.json \
+  --output_json ./generation_outputs/summary_text_metrics.json
+
+
+
+
+
+
 
 
 export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
@@ -32,15 +47,6 @@ python generation_evaluation/calculate_sum.py --path ./eval_summary
 
 
 
-
-# Free text-overlap metrics. These are not official MLVU GPT-4 judge scores.
-python generation_evaluation/evaluate_text_metrics.py \
-  --pred_path ./generation_outputs/subplot_all.json \
-  --output_json ./generation_outputs/subplot_text_metrics.json
-
-python generation_evaluation/evaluate_text_metrics.py \
-  --pred_path ./generation_outputs/summary_all.json \
-  --output_json ./generation_outputs/summary_text_metrics.json
 
 
 # Local LLM judge. These are not official MLVU GPT-4 judge scores.

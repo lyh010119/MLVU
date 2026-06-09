@@ -1,0 +1,373 @@
+{
+  "summary": {
+    "num_samples": 40,
+    "token_f1": 13.459702945292722,
+    "rouge_l": 7.375150855208159,
+    "bleu": 0.4147302576875931,
+    "chrf": 11.41509903857893,
+    "pred_len": 56.55,
+    "ref_len": 213.425
+  },
+  "per_sample": [
+    {
+      "video_name": "test_AWC-4.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 8,
+      "ref_len": 183
+    },
+    {
+      "video_name": "test_TFS-5.mp4",
+      "token_f1": 28.292682926829265,
+      "rouge_l": 14.072905281869236,
+      "bleu": 1.3081523952111636,
+      "chrf": 21.885191164870374,
+      "pred_len": 58,
+      "ref_len": 147
+    },
+    {
+      "video_name": "test_cartoon_10.mp4",
+      "token_f1": 2.1276595744680846,
+      "rouge_l": 0.7249726893850803,
+      "bleu": 4.267493189017427e-19,
+      "chrf": 0.537865171677608,
+      "pred_len": 6,
+      "ref_len": 276
+    },
+    {
+      "video_name": "test_movie101_90.mp4",
+      "token_f1": 30.62200956937799,
+      "rouge_l": 18.141163390732547,
+      "bleu": 1.9421070363263866,
+      "chrf": 32.09078051907541,
+      "pred_len": 101,
+      "ref_len": 108
+    },
+    {
+      "video_name": "test_entv_1.mp4",
+      "token_f1": 25.31645569620253,
+      "rouge_l": 16.325426283222598,
+      "bleu": 1.4504527659299893,
+      "chrf": 28.412888560550876,
+      "pred_len": 148,
+      "ref_len": 168
+    },
+    {
+      "video_name": "test_movie101_100.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 8,
+      "ref_len": 232
+    },
+    {
+      "video_name": "test_cartoon_3.mp4",
+      "token_f1": 20.64516129032258,
+      "rouge_l": 10.9043192065756,
+      "bleu": 0.2461582002842681,
+      "chrf": 15.185769749666292,
+      "pred_len": 68,
+      "ref_len": 242
+    },
+    {
+      "video_name": "test_UWA-6.mp4",
+      "token_f1": 37.65690376569037,
+      "rouge_l": 23.410479300221834,
+      "bleu": 1.9805671560080211,
+      "chrf": 30.71542017251665,
+      "pred_len": 122,
+      "ref_len": 117
+    },
+    {
+      "video_name": "test_cartoon_2.mp4",
+      "token_f1": 16.89373297002725,
+      "rouge_l": 7.960389238944554,
+      "bleu": 0.0851090421044918,
+      "chrf": 12.813911569271996,
+      "pred_len": 67,
+      "ref_len": 300
+    },
+    {
+      "video_name": "test_movie101_91.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.034209085933223866,
+      "pred_len": 25,
+      "ref_len": 152
+    },
+    {
+      "video_name": "test_entv_18.mp4",
+      "token_f1": 16.07142857142857,
+      "rouge_l": 9.215129746690778,
+      "bleu": 0.16438152201753792,
+      "chrf": 15.577547490666124,
+      "pred_len": 43,
+      "ref_len": 181
+    },
+    {
+      "video_name": "test_cartoon_14.mp4",
+      "token_f1": 11.970074812967582,
+      "rouge_l": 6.592552327796628,
+      "bleu": 0.03196474521959297,
+      "chrf": 9.1583041922558,
+      "pred_len": 71,
+      "ref_len": 330
+    },
+    {
+      "video_name": "test_cartoon_23.mp4",
+      "token_f1": 17.88079470198676,
+      "rouge_l": 9.667553495679025,
+      "bleu": 0.2603755097526703,
+      "chrf": 15.472208865374116,
+      "pred_len": 63,
+      "ref_len": 239
+    },
+    {
+      "video_name": "test_AWG-1.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 34,
+      "ref_len": 303
+    },
+    {
+      "video_name": "test_cartoon_4.mp4",
+      "token_f1": 21.9435736677116,
+      "rouge_l": 10.959141345663909,
+      "bleu": 0.2838654189737854,
+      "chrf": 15.532302134606304,
+      "pred_len": 76,
+      "ref_len": 243
+    },
+    {
+      "video_name": "test_cartoon_5.mp4",
+      "token_f1": 18.243243243243246,
+      "rouge_l": 8.97999514529393,
+      "bleu": 0.18809109063508395,
+      "chrf": 14.048832873955938,
+      "pred_len": 62,
+      "ref_len": 234
+    },
+    {
+      "video_name": "test_entv_13.mp4",
+      "token_f1": 12.949640287769787,
+      "rouge_l": 7.194114285608423,
+      "bleu": 0.10470511457286832,
+      "chrf": 10.55259366935943,
+      "pred_len": 48,
+      "ref_len": 230
+    },
+    {
+      "video_name": "test_BWB-5.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 32,
+      "ref_len": 103
+    },
+    {
+      "video_name": "test_BWB-4.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 28,
+      "ref_len": 126
+    },
+    {
+      "video_name": "test_movie101_93.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 24,
+      "ref_len": 163
+    },
+    {
+      "video_name": "test_cartoon_15.mp4",
+      "token_f1": 22.163588390501317,
+      "rouge_l": 11.260348215790957,
+      "bleu": 0.7900710512068695,
+      "chrf": 21.498142993110854,
+      "pred_len": 108,
+      "ref_len": 271
+    },
+    {
+      "video_name": "test_cartoon_21.mp4",
+      "token_f1": 21.875,
+      "rouge_l": 13.324381989415881,
+      "bleu": 0.4885476355160731,
+      "chrf": 18.86579883606275,
+      "pred_len": 85,
+      "ref_len": 235
+    },
+    {
+      "video_name": "test_AWD-3.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 17,
+      "ref_len": 143
+    },
+    {
+      "video_name": "test_movie101_99.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 20,
+      "ref_len": 394
+    },
+    {
+      "video_name": "test_cartoon_22.mp4",
+      "token_f1": 26.373626373626376,
+      "rouge_l": 12.096281168456152,
+      "bleu": 0.43138729052247465,
+      "chrf": 20.6258770514457,
+      "pred_len": 69,
+      "ref_len": 204
+    },
+    {
+      "video_name": "test_entv_6.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 3,
+      "ref_len": 179
+    },
+    {
+      "video_name": "test_entv_2.mp4",
+      "token_f1": 27.906976744186046,
+      "rouge_l": 16.264588480658343,
+      "bleu": 1.375940199863192,
+      "chrf": 27.20207349140039,
+      "pred_len": 100,
+      "ref_len": 158
+    },
+    {
+      "video_name": "test_cartoon_17.mp4",
+      "token_f1": 24.330900243309,
+      "rouge_l": 12.810539325164411,
+      "bleu": 0.6425280458754671,
+      "chrf": 16.95140829463651,
+      "pred_len": 108,
+      "ref_len": 303
+    },
+    {
+      "video_name": "test_entv_22.mp4",
+      "token_f1": 31.40495867768595,
+      "rouge_l": 21.38793006250195,
+      "bleu": 2.494913211036497,
+      "chrf": 27.20267720062669,
+      "pred_len": 103,
+      "ref_len": 139
+    },
+    {
+      "video_name": "test_cartoon_18.mp4",
+      "token_f1": 22.807017543859644,
+      "rouge_l": 11.680470879485794,
+      "bleu": 0.46933643091327787,
+      "chrf": 19.854589938631836,
+      "pred_len": 92,
+      "ref_len": 250
+    },
+    {
+      "video_name": "test_cartoon_13.mp4",
+      "token_f1": 16.425120772946862,
+      "rouge_l": 7.534108652009361,
+      "bleu": 0.08391417670739161,
+      "chrf": 11.654831760021233,
+      "pred_len": 71,
+      "ref_len": 343
+    },
+    {
+      "video_name": "test_entv_5.mp4",
+      "token_f1": 23.61111111111111,
+      "rouge_l": 12.245921153930201,
+      "bleu": 0.6058462612876917,
+      "chrf": 19.68081759455792,
+      "pred_len": 83,
+      "ref_len": 205
+    },
+    {
+      "video_name": "test_entv_21.mp4",
+      "token_f1": 27.07692307692307,
+      "rouge_l": 12.692852496102697,
+      "bleu": 0.7536082409239822,
+      "chrf": 20.96590749888977,
+      "pred_len": 114,
+      "ref_len": 211
+    },
+    {
+      "video_name": "test_BWG-4.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 30,
+      "ref_len": 157
+    },
+    {
+      "video_name": "test_AWB-6.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 36,
+      "ref_len": 323
+    },
+    {
+      "video_name": "test_movie101_98.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 128
+    },
+    {
+      "video_name": "test_movie101_97.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 6,
+      "ref_len": 133
+    },
+    {
+      "video_name": "test_movie101_94.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 185
+    },
+    {
+      "video_name": "test_cartoon_1.mp4",
+      "token_f1": 21.678321678321684,
+      "rouge_l": 13.443507688121894,
+      "bleu": 0.386425130881063,
+      "chrf": 18.00450332698288,
+      "pred_len": 71,
+      "ref_len": 215
+    },
+    {
+      "video_name": "test_entv_25.mp4",
+      "token_f1": 12.121212121212123,
+      "rouge_l": 6.116962359004503,
+      "bleu": 0.02076263573388388,
+      "chrf": 12.079508337010553,
+      "pred_len": 46,
+      "ref_len": 284
+    }
+  ]
+}

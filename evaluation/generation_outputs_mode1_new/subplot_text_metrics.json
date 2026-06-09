@@ -1,0 +1,427 @@
+{
+  "summary": {
+    "num_samples": 46,
+    "token_f1": 1.5043029055497932,
+    "rouge_l": 0.8231494158478254,
+    "bleu": 0.09211272333397576,
+    "chrf": 1.187886099633063,
+    "pred_len": 8.369565217391305,
+    "ref_len": 36.69565217391305
+  },
+  "per_sample": [
+    {
+      "video_name": "test_subSummary_19.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 42
+    },
+    {
+      "video_name": "test_subSummary_18.mp4",
+      "token_f1": 2.7027027027027026,
+      "rouge_l": 1.4329687755060418,
+      "bleu": 1.0712047249768554e-08,
+      "chrf": 0.08218277449046682,
+      "pred_len": 4,
+      "ref_len": 70
+    },
+    {
+      "video_name": "test_subSummary_17.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 42
+    },
+    {
+      "video_name": "test_subSummary_16.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 35
+    },
+    {
+      "video_name": "test_subSummary_15.mp4",
+      "token_f1": 5.555555555555555,
+      "rouge_l": 3.1676413255385887,
+      "bleu": 0.0033957516241212896,
+      "chrf": 0.16835016835016833,
+      "pred_len": 4,
+      "ref_len": 32
+    },
+    {
+      "video_name": "test_subSummary_14.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 30
+    },
+    {
+      "video_name": "test_subSummary_13.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 34
+    },
+    {
+      "video_name": "test_subSummary_12.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 18
+    },
+    {
+      "video_name": "test_subSummary_11.mp4",
+      "token_f1": 17.777777777777782,
+      "rouge_l": 9.305255814949419,
+      "bleu": 0.8275627201963309,
+      "chrf": 22.986008875233992,
+      "pred_len": 77,
+      "ref_len": 13
+    },
+    {
+      "video_name": "test_subSummary_10.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 25
+    },
+    {
+      "video_name": "test_subSummary_0.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 57
+    },
+    {
+      "video_name": "test_subSummary_6.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 47
+    },
+    {
+      "video_name": "test_subSummary_1.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 40
+    },
+    {
+      "video_name": "test_subSummary_45.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 42
+    },
+    {
+      "video_name": "test_subSummary_44.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 65
+    },
+    {
+      "video_name": "test_subSummary_43.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 26,
+      "ref_len": 86
+    },
+    {
+      "video_name": "test_subSummary_42.mp4",
+      "token_f1": 9.195402298850574,
+      "rouge_l": 5.641194503796992,
+      "bleu": 0.0055018436159710825,
+      "chrf": 0.26688017080330934,
+      "pred_len": 14,
+      "ref_len": 73
+    },
+    {
+      "video_name": "test_subSummary_41.mp4",
+      "token_f1": 8.695652173913045,
+      "rouge_l": 5.858653684749111,
+      "bleu": 0.025780504160252987,
+      "chrf": 0.2741228070175438,
+      "pred_len": 10,
+      "ref_len": 36
+    },
+    {
+      "video_name": "test_subSummary_40.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 27
+    },
+    {
+      "video_name": "test_subSummary_7.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 24
+    },
+    {
+      "video_name": "test_subSummary_2.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 22
+    },
+    {
+      "video_name": "test_subSummary_8.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 40
+    },
+    {
+      "video_name": "test_subSummary_3.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 35
+    },
+    {
+      "video_name": "test_subSummary_39.mp4",
+      "token_f1": 20.725388601036272,
+      "rouge_l": 9.936681501980596,
+      "bleu": 3.374708494511821,
+      "chrf": 30.732519396567238,
+      "pred_len": 157,
+      "ref_len": 36
+    },
+    {
+      "video_name": "test_subSummary_38.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 30
+    },
+    {
+      "video_name": "test_subSummary_37.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 34
+    },
+    {
+      "video_name": "test_subSummary_36.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 28
+    },
+    {
+      "video_name": "test_subSummary_35.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 25
+    },
+    {
+      "video_name": "test_subSummary_34.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 12
+    },
+    {
+      "video_name": "test_subSummary_33.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 6,
+      "ref_len": 56
+    },
+    {
+      "video_name": "test_subSummary_32.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 15
+    },
+    {
+      "video_name": "test_subSummary_31.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 16
+    },
+    {
+      "video_name": "test_subSummary_30.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 42
+    },
+    {
+      "video_name": "test_subSummary_9.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 34
+    },
+    {
+      "video_name": "test_subSummary_4.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 20
+    },
+    {
+      "video_name": "test_subSummary_5.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 38
+    },
+    {
+      "video_name": "test_subSummary_29.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 26
+    },
+    {
+      "video_name": "test_subSummary_28.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 39
+    },
+    {
+      "video_name": "test_subSummary_27.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 21
+    },
+    {
+      "video_name": "test_subSummary_26.mp4",
+      "token_f1": 4.545454545454546,
+      "rouge_l": 2.5224775224792184,
+      "bleu": 0.00023594854233938083,
+      "chrf": 0.1326963906581741,
+      "pred_len": 4,
+      "ref_len": 40
+    },
+    {
+      "video_name": "test_subSummary_25.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 37
+    },
+    {
+      "video_name": "test_subSummary_24.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 40
+    },
+    {
+      "video_name": "test_subSummary_23.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 4,
+      "ref_len": 61
+    },
+    {
+      "video_name": "test_subSummary_22.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 36
+    },
+    {
+      "video_name": "test_subSummary_21.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 2,
+      "ref_len": 34
+    },
+    {
+      "video_name": "test_subSummary_20.mp4",
+      "token_f1": 0.0,
+      "rouge_l": 0.0,
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "pred_len": 1,
+      "ref_len": 33
+    }
+  ]
+}

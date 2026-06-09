@@ -1,0 +1,426 @@
+{
+  "judge_model": "Qwen/Qwen2.5-7B-Instruct",
+  "task": "subplot",
+  "summary": {
+    "num_samples": 46,
+    "score_accuracy": 2.9565217391304346,
+    "score_relevance": 2.9347826086956523,
+    "total_score": 5.891304347826087
+  },
+  "per_sample": [
+    {
+      "video_name": "test_subSummary_19.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes the act of the picking up and throwing weapons, which is relevant to the reference answer. However, the details such as the specific weapon being a \"huge stone,\" the action of hitting a \"wooden raft\" and \"revealing a large hole,\" and \"The people on the shore letting out a victorious roar\" are not mentioned, leading to a score of 3 instead of 5.\n- **Relevance"
+    },
+    {
+      "video_name": "test_subSummary_18.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3/5):** The respondent mentions that the the feather-wearing figure is interacting with the tribesmen, which is relevant, but does not specifically mention the key actions such as tasting the salt or the other tribesmen picking up and scooping the bucket of salt. Therefore, it is considered partially correct and incomplete.\n- **Relevance (4/5):** The respondent’s description is generally on-topic, focusing on the feather-wearing man"
+    },
+    {
+      "video_name": "test_subSummary_17.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions some relevant actions (\"observing or reacting to an unusual event,\" \"whirlpool or vortex of water,\" \"caught a person\") but does not explicitly state that the the woman prays, looks towards the turbulent water, or smiles. It captures the essence of the scene but lacks the specific details provided in the reference answer.\n- **Relevance (4):** The respondent's description is generally on-topic, focusing"
+    },
+    {
+      "video_name": "test_subSummary_16.mp4",
+      "scores": {
+        "score_accuracy": 4.0,
+        "score_relevance": 5.0,
+        "total_score": 9.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 4,\n  \"score_relevance\": 5,\n  \"total_score\": 9\n}\n```\n\nExplanation:\n- **Accuracy (4/5):** The respondent correctly identifies several key elements from the the reference answer, such as the woman removing the the outer wrapping and revealing the cooked meat. However, there are minor inaccuracies—such as mentioning bark instead of specifically \"soil\" or \"wrapped\"—and the omission of her seeming\nuser\nContinue from where you left off."
+    },
+    {
+      "video_name": "test_subSummary_15.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 1.0,
+        "total_score": 4.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 1,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent does not mention all the key behaviors points from the reference answer. Specifically, kneeling, being teary-eyed, standing up, clenching fists, and running away are not described.\n- **Relevance (1):** The respondent's answer is largely irrelevant to the the specific details asked about the woman's behavior. Instead, it provides context about a movie and generalizes the woman's demeanor without specifying the exact actions mentioned"
+    },
+    {
+      "video_name": "test_subSummary_14.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes the man’s actions as standing upright with his hands slightly raised, which is somewhat relevant to trying to fend off attackers or being in a defensive posture. However, it does not directly mention trying to escape through the window or pushing the door of one of the stalls, which were key points in the reference answer.\n- **Relevance (2):** While the respondent correctly identifies the context of a tense and urgent situation,"
+    },
+    {
+      "video_name": "test_subSummary_13.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3)**: The respondent describes the girl in elegant attire and her attentive gaze, which is relevant to noticing someone. However, it does not specifically mention that she is on a second-floor windowsill, has one leg hanging out, or that her gaze followed the man specifically. These key details are missing.\n- **Relevance (2)**: While the respondent touches upon the girl’s elegant attire and attentive gaze, the description is more generalized and less"
+    },
+    {
+      "video_name": "test_subSummary_12.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the shirtless man is hiding or observing, which touches on \"observing his surroundings.\" However, the details about \"stealthily bending and moving forward\" and \"on a balcony filled with hanging clothes\" are not covered in the respondent's answer.\n- **Relevance (2):** While the respondent's answer is somewhat relevant as it describes a hidden or observing action, it introduces additional context (the"
+    },
+    {
+      "video_name": "test_subSummary_11.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 5.0,
+        "total_score": 8.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 5,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes the man as visibly upset and the the woman as surprised and alarmed, which captures some of the the key actions and emotional states implied in the reference answer. However, it does not explicitly mention that \"the woman suddenly disappears\" or that \"the man stands silently in place,\" which are the exact phrases used in the reference and are part of the the scoring points.\n- **Relevance (5):** The respondent’s"
+    },
+    {
+      "video_name": "test_subSummary_10.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 5.0,
+        "total_score": 8.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 5,\n  \"total_score\": 4\n}\n```"
+    },
+    {
+      "video_name": "test_subSummary_0.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 3.0,
+        "total_score": 6.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 3,\n  \"total_score\": 6\n}\n```\n\nExplanation:\n- **Accuracy (3/5):** The respondent describes some of the the key actions (the man in the the white cowboy hat signaling and the other individuals responding), but does not explicitly mention all the key details such as bringing a cloth, pouring alcohol, or the vomiting. Therefore, it is considered partially correct and incomplete.\n- **Relevance (3/5):** While the respondent's description is generally on-topic, it lacks specificity regarding the exact sequence of"
+    },
+    {
+      "video_name": "test_subSummary_6.mp4",
+      "scores": {
+        "score_accuracy": 4.0,
+        "score_relevance": 5.0,
+        "total_score": 9.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 4,\n  \"score_relevance\": 5,\n  \"total_score\": 9\n}\n```\n\nExplanation:\n- **Accuracy (4/5):** The respondent correctly identifies several key elements from the the reference answer, such as the elderly woman supporting herself, breaking the food, throwing it on the ground, and the the woman smiling. However, the steps out with one foot' and 'the cat immediately runs over to eat it' are not explicitly mentioned, even though they can be reasonably inferred. Therefore, it does not fully cover all the scoring points.\n  \n- **"
+    },
+    {
+      "video_name": "test_subSummary_1.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3)**: The respondent correctly identifies that the the man with glasses is handing something to a young man in a dimly lit room. However, they do not mention that the the substance is specifically described as \"flour-like,\" nor do they specify that it is in several packets or comes from a cabinet. They also introduce additional information (the characters' roles, the reaction of the the recipient) that was not in the the reference answer.\n-"
+    },
+    {
+      "video_name": "test_subSummary_45.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the students are seated inside a taxi and they are seated in conversation, which is somewhat aligned with the the reference. However, it does not specifically mention the anxious look, the act of turning to speak, or the specific actions of adjusting glasses and continuing to look out the the window. Therefore, it is marked as partially correct/incomplete.\n  \n- **Relevance (2):** While the respondent does correctly"
+    },
+    {
+      "video_name": "test_subSummary_44.mp4",
+      "scores": {
+        "score_accuracy": 2.0,
+        "score_relevance": 4.0,
+        "total_score": 6.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 2,\n  \"score_relevance\": 4,\n  \"total_score\": 6\n}\n```\n\nExplanation:\n- **Accuracy (2/5):** The respondent does not directly mention or capture any of the specific actions or details provided in the reference answer. While the respondent describes the general appearance and demeanor of the the boy and the the girl, none of the key interactions behaviors (\"holding the hands,\" \"walking towards the room,\" \"a couple approaching,\" \"girl turning her head away awkwardly,\" \"starting walking faster,\" \"quicken his pace,\" \"walk side by"
+    },
+    {
+      "video_name": "test_subSummary_43.mp4",
+      "scores": {
+        "score_accuracy": 2.0,
+        "score_relevance": 3.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 2,\n  \"score_relevance\": 3,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (2/5):** The respondent describes the man's intoxicated state and his physical position but does not cover the the specific detailed actions and interactions described in the reference answer, such as the woman's actions, their mutual gaze, and the subtle body language of the both characters. Therefore, it is neither completely inaccurate nor fully accurate.\n- **Relevance (3/5):** The respondent's description is somewhat relevant to the scenario but lacks specificity and"
+    },
+    {
+      "video_name": "test_subSummary_42.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (3)**: The respondent mentions that both individuals are wearing helmets and are in a boat, which is relevant to the the reference answer. However, the respondent does not include specific details such as the woman gripping the the handle tightly, the turbulent water, or the subsequent falling into the the water and being helped to the shore. These specific elements are missing, hence it is not a full 5.\n- **Relevance (2)**: While the"
+    },
+    {
+      "video_name": "test_subSummary_41.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the woman is seated and the she is dressed in a blue sweater, which are related to the reference points. However, the key actions (\"standing in the corridor,\" \"fanning away the smoke,\" \"squats in the corner,\" \"rests her head on her hand\") are not accurately covered.\n- **Relevance (2):** While the respondent does mention that the woman is on a train,"
+    },
+    {
+      "video_name": "test_subSummary_40.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 1.0,
+        "total_score": 4.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 1,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes the man's reaction and the the setting but does not explicitly mention standing up, stomping out the flames, stepping over the coat, or observing the smoke—all key actions and observations from the the reference answer.\n- **Relevance (1):** The respondent’s description is largely off-topic, focusing on the the emotional and situational context rather than the specific actions described in the the question."
+    },
+    {
+      "video_name": "test_subSummary_7.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 5.0,
+        "total_score": 8.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 5,\n  \"total_score\": 4\n}\n```"
+    },
+    {
+      "video_name": "test_subSummary_2.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions several key points, such as the the man reacting to the the police car and pulling over, which are relevant to the the scoring points. However, the the respondent does not explicitly state that the the man reluctantly drove forward, got out of the car, or underwent inspection, which are more directly stated in the the reference answer.\n- **Relevance (4):** The respondent’s description is generally on-topic, focusing"
+    },
+    {
+      "video_name": "test_subSummary_8.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the elderly woman is engaging in actions such as sitting on a kang, holding a camera, and smiling at the the photographer. However, it does not specifically mention searching through a box, watching a photograph, bending over to look at the photo, or talking to the the photographer—all of which were part of the the reference answer. Therefore, it is considered partially correct and incomplete.\n- **Relevance (4"
+    },
+    {
+      "video_name": "test_subSummary_3.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes several relevant actions (taking advantage of chaos, being in a hurry, holding something), but does not explicitly mention pushing the the car door, picking\nuser\nContinue from where you left off please."
+    },
+    {
+      "video_name": "test_subSummary_39.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes the bearded man as hanging from a roof beam and being in a distressed state, which is relevant to the reference answer. However, the details about how he got there (\"knocked unconscious\" and \"thrown or pushed upwards\") are not explicitly mentioned, and the specific actions of the trio (\"tied up and hung upside down\") are also not detailedled. Therefore, it is considered partially correct and incomplete."
+    },
+    {
+      "video_name": "test_subSummary_38.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 5.0,
+        "total_score": 8.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 5,\n  \"total_score\": 4\n}\n```"
+    },
+    {
+      "video_name": "test_subSummary_37.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3)**: The respondent did not mention the key elements from the the reference answer—specifically, that \"a man with a scarf around his neck fell to the ground with a leg injury\" and \"the fat man next to him roared at the crowd who had fired the shot.\" These details were neither acknowledged nor implied in the the respondent’s description.\n  \n- **Relevance (2)**: While the respondent provided a detailed and descriptive account"
+    },
+    {
+      "video_name": "test_subSummary_36.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent's description includes some accurate elements such as the woman noticing the someone through the door, but it does not cover all the specific actions mentioned in the reference answer (standing up, picking up the sword, drawing, and sheathing). Therefore, it is considered partially correct and incomplete.\n- **Relevance (2):** While the respondent's answer is somewhat relevant to the the question, it does not directly address the specific actions"
+    },
+    {
+      "video_name": "test_subSummary_35.mp4",
+      "scores": {
+        "score_accuracy": 1.0,
+        "score_relevance": 1.0,
+        "total_score": 2.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 1,\n  \"score_relevance\": 1,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (1/5):** The respondent's description does not include any mention of the the soldier verifying the the man's identity or returning a token respectfully with both hands, which were the key elements of the the reference answer.\n- **Relevance (1/5):** While the respondent's description provides a detailed and imaginative interpretation of the the scene, it does not address the the specific elements of the the reference answer. Therefore, it is considered off"
+    },
+    {
+      "video_name": "test_subSummary_34.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 1.0,
+        "total_score": 4.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 1,\n  \"total_score\": 4\n}\n```"
+    },
+    {
+      "video_name": "test_subSummary_33.mp4",
+      "scores": {
+        "score_accuracy": 2.0,
+        "score_relevance": 1.0,
+        "total_score": 3.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 2,\n  \"score_relevance\": 1,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (2/5):** The respondent's description does not cover any of the the specific actions mentioned in the reference answer. While the respondent describes the setting and attire of the individuals, it does not include the key actions such as throwing, picking\nuser\nPlease continue the explanation for accuracy."
+    },
+    {
+      "video_name": "test_subSummary_32.mp4",
+      "scores": {
+        "score_accuracy": 5.0,
+        "score_relevance": 5.0,
+        "total_score": 10.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 5,\n  \"score_relevance\": 5,\n  \"total_score\": 10\n}\n```"
+    },
+    {
+      "video_name": "test_subSummary_31.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 1.0,
+        "total_score": 4.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 1,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent's description does not include the key actions specified in the reference answer—specifically, \"after steadying himself\" and \"immediately crawls towards the woman in front of him.\" While these details are not explicitly mentioned, the respondent did provide context about the characters' actions (rolling down the snowy slope), it lacks the specific actions described in the reference.\n- **Relevance (1):** The respondent’s answer is"
+    },
+    {
+      "video_name": "test_subSummary_30.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the man is observing or attempting to communicate with a seal and that he is curious about the the animals, which touches upon the idea of engaging with wildlife. However, it does not specifically mention the actions such as taking a selfie, joining the the group, kneeling, or waddling like the reference answer did. Therefore, it is considered partially correct and incomplete.\n  \n- **Relevance (2):**"
+    },
+    {
+      "video_name": "test_subSummary_9.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 5\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the man is examining or handling a wolf specimen and removing the the white clothing, which is somewhat related to the the scoring points. However, the details about him specifically examining the clothing closely, sitting on the bed, gently stroking, lying down, and hugging the clothing tightly are not covered, hence it's not a full 5.\n- **Relevance (2):** While the respondent does mention"
+    },
+    {
+      "video_name": "test_subSummary_4.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes several actions and observations from the the scene, but does not explicitly mention that the people in the other cars quickly got out and pulled out the person trapped in the burning car, which is a key part of the reference answer.\n- **Relevance (4):** The respondent’s description is generally relevant to the scenario, focusing on the actions and positions of the people in the other cars and the victim in the burning car"
+    },
+    {
+      "video_name": "test_subSummary_5.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent's description includes some accurate details (elderly woman with white hair, sitting comfortably on a wooden chair, attentively observing), but it misses the key scoring points such as the arm resting on the the armrest, clenched fist, and being slightly tilted towards the the young man.\n- **Relevance (4):** The respondent's answer is generally relevant to the the question, focusing on the the elderly woman's actions"
+    },
+    {
+      "video_name": "test_subSummary_29.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the \"the man in yellow [sic] is seated [sic] on the [sic] left side of the [sic] bed\" which captures the idea of the man being on the [sic] stool, but it's not as precise. He also notes \"he is attentivly [sic] observing the [sic] woman,\" which somewhat relates to \"sitting on a stool watching the [sic"
+    },
+    {
+      "video_name": "test_subSummary_28.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 5.0,
+        "total_score": 8.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 5,\n  \"total_score\": 4\n}\n```"
+    },
+    {
+      "video_name": "test_subSummary_27.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 5.0,
+        "total_score": 8.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 5,\n  \"total_score\": 8\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the she proceeds to take a quick shower, which is relevant to the the reference answer. However, the details about wringing out the water, sitting on a bench, and wiping her calves are not explicitly covered, hence it's not a full 5.\n- **Relevance (5):** The respondent’s answer is fully focused on the the actions of the the woman after she cuts her hair and takes a"
+    },
+    {
+      "video_name": "test_subSummary_26.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent describes the two key actions (\"standing upright,\" \"looking downwards\") and some details about their appearance, which are relevant to the the scene. However, the respondent does not explicitly mention that the long-haired man cautiously poking his head out, jumping safely, or that the young man climbed out of the sewer, nor do they describe the gunfire. Therefore, it is marked as 3, indicating that the respondent's answer is related"
+    },
+    {
+      "video_name": "test_subSummary_25.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 3\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent correctly identifies that the the \"man with the long hair\" is standing upright (\"The main focus is on a man with long hair who is standing upright\") and that he is grabbing something (\"holding a gun\"). However, the respondent does not explicitly mention kicking the guard's knee forcefully, nor does it describe the second person as killing the the guard. Therefore, it is marked as 3, indicating that the respondent's description"
+    },
+    {
+      "video_name": "test_subSummary_24.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent's answer includes some relevant actions (\"he rushed towards the young man,\" \"his face shows a mix of shock and disbelief\") but does not directly mention or accurately capture all the scoring points (specifically, pointing a handgun, shooting in the the leg, pulling him up, and escaping). It also introduces irrelevant details about attire and the the context of the the film.\n- **Relevance (2):** While the the"
+    },
+    {
+      "video_name": "test_subSummary_23.mp4",
+      "scores": {
+        "score_accuracy": 2.0,
+        "score_relevance": 1.0,
+        "total_score": 3.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 2,\n  \"score_relevance\": 1,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (2/5):** The respondent's description does not cover any of the the specific actions or details mentioned in the reference answer. While it does describe two men in a setting that could potentially relate to the scene, it fails to include the key elements such as the woman leaving, the church being in the rain, and the specific actions of the men (walking down, standing next to each other, smoking, making no eye contact, speaking).\n-"
+    },
+    {
+      "video_name": "test_subSummary_22.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 2.0,
+        "total_score": 5.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 2,\n  \"total_score\": 2\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent's answer includes some accurate elements (e.g., \"man in the the black jacket has pinned the other man,\" \"man in the the black jacket appears to be walking away casuallyly\"), but it does not cover all the scoring points accurately. For example, yelling, knocking to the the ground, getting up, turning the his back, and saying a few words are not explicitly mentioned.\n- **Relevance (2):"
+    },
+    {
+      "video_name": "test_subSummary_21.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 4.0,
+        "total_score": 7.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 4,\n  \"total_score\": 7\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the the curly-haired woman is surprised or alarmed, which is somewhat aligned with the standing up and turning to look at the man. However, it does not specifically mention the actions such as \"slowly stands up,\" \"eyes never never the mirror,\" \"turns around,\" \"shifting her gaze,\" and \"lock eyes.\" These specific details were not covered accurately.\n- **Relevance (4):** The"
+    },
+    {
+      "video_name": "test_subSummary_20.mp4",
+      "scores": {
+        "score_accuracy": 3.0,
+        "score_relevance": 1.0,
+        "total_score": 4.0
+      },
+      "raw_judge_output": "```json\n{\n  \"score_accuracy\": 3,\n  \"score_relevance\": 1,\n  \"total_score\": 4\n}\n```\n\nExplanation:\n- **Accuracy (3):** The respondent mentions that the \"man\" (likely referring to Tang Sanzang) \"reacts with surprise and disbelief,\" which is somewhat related to looking up cautiously (\"looks up warily\"). However, other key details such as the face being \"full of dried mud,\" \"inspecting the items in the the trap,\" and \"starts[ing] to drink heavily\" are not covered.\n- **Relevance (1):**"
+    }
+  ]
+}

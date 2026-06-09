@@ -1,0 +1,278 @@
+[
+  {
+    "video_name": "test_subSummary_19.mp4",
+    "Q": "Please describe the action of the tribesmen starting to throw weapons into the middle of the river.",
+    "A": "A man picks up a huge stone from the ground and throws it into the river with all his strength, hitting a wooden raft and revealing a large hole. The people on the shore let out a victorious roar.",
+    "pred": "请描述部落成员开始向河中间扔武器的行动。"
+  },
+  {
+    "video_name": "test_subSummary_18.mp4",
+    "Q": "Please describe the interaction between the feather-wearing man and the local tribesmen after making salt in the tribe.",
+    "A": "The feather-wearing man watches the tribesmen make salt in the tribe, he grabs a handful of salt and puts it in his mouth to taste. A local tribesman walks up to the man, picks up a bucket and scoops a full bucket of salt. He glances at the man, then bends down to take away the items the man has put down.",
+    "pred": "该视频是《山海经》的电视剧片段，讲述了一个关于古代中国神话传说的故事。在这个片段中，一个头戴羽毛头冠的男子（可能是剧中的人物之一）与一群当地的部落成员互动。他们似乎在进行某种传统的仪式或活动，部落成员们穿着原始的服装，有的手持工具，有的则跪地，表现出一种敬畏和参与的态度。这个场景可能是在展示古代中国部落的生活方式和文化传统。"
+  },
+  {
+    "video_name": "test_subSummary_17.mp4",
+    "Q": "Please describe the action of the woman on the shore after the whirlpool in the water rolls the tribesman into the river bottom.",
+    "A": "The woman quickly kneels and prays. When she lifts her head, the turbulent water surface is empty except for a few inflatable skins. She slowly stands up, constantly looking towards the opposite bank, suddenly she smiles.",
+    "pred": "该视频中, 一个女性在岸边看到一个部落成员被漩涡卷入河底后, 她似乎非常震惊和担忧。她的表情和身体语言表明她可能在呼叫帮助或试图救援那个部落成员。"
+  },
+  {
+    "video_name": "test_subSummary_16.mp4",
+    "Q": "Please describe the woman's action of peeling off the wrapped soil to display the roasted meat to the tribal members.",
+    "A": "The woman uses a stone to crack open the soil wrapping, revealing the still-smoking roasted fat meat. The woman slowly sits down, seemingly introducing this fat meat to everyone.",
+    "pred": "该女子正在展示她手中的烤肉, 她用手指拨开覆盖在肉上的泥土, 展示出烤肉的色香味美。"
+  },
+  {
+    "video_name": "test_subSummary_15.mp4",
+    "Q": "Please describe the behavior of the woman when the long-haired man is feeding the pig in the fence.",
+    "A": "While the man is feeding the pig, the woman kneels on the ground. She is teary-eyed and eventually stands up, clenches her fists and runs away.",
+    "pred": "该女子在长发男子给猪喂食时, 她似乎在观察或等待轮到她。她的表情看起来平静，没有表现出特别的反应或情绪。"
+  },
+  {
+    "video_name": "test_subSummary_14.mp4",
+    "Q": "Please describe the actions of the man in the suit while avoiding the thugs in the bathroom.",
+    "A": "He tried to escape through the window but couldn't open it, so in a panic, he pushed open the door of one of the stalls.",
+    "pred": "无法理解"
+  },
+  {
+    "video_name": "test_subSummary_13.mp4",
+    "Q": "Please describe the details of how the girl in the white dress noticed the man in the suit as he passed by the wonton shop in the alley.",
+    "A": "A girl in a white dress was sitting on the windowsill on the second floor, with one leg hanging outside the window, and her gaze followed the man in the suit.",
+    "pred": "请描述女孩在白裙子中如何注意到穿着西装的男子从她身边经过的饺子店巷道。"
+  },
+  {
+    "video_name": "test_subSummary_12.mp4",
+    "Q": "Please describe what the shirtless man did while hiding behind the banana tree potted plant.",
+    "A": "He observed his surroundings while stealthily bending and moving forward on a balcony filled with hanging clothes.",
+    "pred": "无法理解"
+  },
+  {
+    "video_name": "test_subSummary_11.mp4",
+    "Q": "Please describe the reactions of the man and the woman after the young man flips the dining table following an argument with the woman in the restaurant.",
+    "A": "The woman suddenly disappears, and the man stands silently in place.",
+    "pred": "无法理解"
+  },
+  {
+    "video_name": "test_subSummary_10.mp4",
+    "Q": "Please describe the actions of the man with slicked-back hair after the woman turns into a kitten.",
+    "A": "The man with slicked-back hair crouches down to pet the kitten and talks to the woman who has turned into a cat.",
+    "pred": "请描述一下这个男子在女子变成猫之后的反应。"
+  },
+  {
+    "video_name": "test_subSummary_0.mp4",
+    "Q": "Please describe the detailed process of the man in the white hat ordering his subordinates to perform the alcohol punishment on the man sitting in the chair.",
+    "A": "The man in the white hat signaled, and one of his subordinates immediately brought a cloth and covered the face of the man sitting in the chair. Another subordinate then poured alcohol over his mouth and nose. After the cloth was removed, the man sitting in the chair continuously vomited the alcohol.",
+    "pred": "请描述一下这个戴着白色帽子的男人命令他的下属对坐在椅子上的那个人进行酒精惩罚的过程。"
+  },
+  {
+    "video_name": "test_subSummary_6.mp4",
+    "Q": "Please describe how the elderly woman with white hair feeds the cat at the old house's entrance.",
+    "A": "The elderly woman with white hair supports herself on the door frame, steps out with one foot, breaks the food in her hand, and throws it on the ground. The cat immediately runs over to eat it, and the woman smiles.",
+    "pred": "该老人头发雪白，她正在老屋的门口给一只猫喂食。"
+  },
+  {
+    "video_name": "test_subSummary_1.mp4",
+    "Q": "Please describe the details when the man with glasses takes out a flour-like substance and hands it to the young man in the dimly lit room.",
+    "A": "In the dimly lit room, the man with glasses, Akai, took out several packets of a flour-like substance from the cabinet and handed the list in his hand to the young man opposite him.",
+    "pred": "该场景中, 一位戴着黑框眼镜的男子正在一个昏暗的房间里与另一名年轻男子交流。年轻男子手中拿着一张地图,而戴眼镜的男子则从他的衣服中取出一包类似面粉的东西,并递给了年轻男子。这个场景可能是在讨论某个计划或任务,戴眼镜的男子似乎在向年轻男子展示某种物质,可能是为了说明某个点或者提供某种信息。"
+  },
+  {
+    "video_name": "test_subSummary_45.mp4",
+    "Q": "Please describe the actions of the two students in school uniforms inside the taxi.",
+    "A": "The two students are anxiously looking out the window. The girl without glasses turns to speak to the girl with glasses. The girl with glasses glances at her, adjusts her glasses, and continues looking out the window.",
+    "pred": "两个学生穿着校服坐在出租车里。"
+  },
+  {
+    "video_name": "test_subSummary_44.mp4",
+    "Q": "Please describe the interaction between the boy and the girl with backpacks in the hotel corridor.",
+    "A": "The boy is holding the girl's hand as they walk towards their room. A couple approaches them, and the girl turns her head away awkwardly. The girl starts walking faster, and the boy quickens his pace to keep up. They walk side by side, and then the boy stops, turns around, and speaks softly.",
+    "pred": "该场景中, 两个年轻人在酒店走廊上互动。女孩穿着一件黄色的短袖上衣，戴着黑色的发夹，她似乎在与男孩交流或玩耍。男孩则穿着一件黑色的T恤，他看起来有些紧张或专注地望着女孩。他们周围是酒店的内部环境，包括白色的墙壁和地板，以及一些植物和装饰品。"
+  },
+  {
+    "video_name": "test_subSummary_43.mp4",
+    "Q": "Please describe the interaction between the man and the woman on the steps after the man gets drunk.",
+    "A": "The man sits down on the steps and looks up at the woman, signaling her to sit beside him. The woman sits down, holds the hem of her dress, and avoids looking at the man. The man keeps staring at her. When the woman looks up and meets his gaze, the man turns his head. The woman shyly smiles and lowers her head, while the man rubs his hands together, wanting to speak but hesitating.",
+    "pred": "该视频是《致我们终将逝去的青春》的片段，讲述了一对年轻恋人因为酒精的影响而发生了争执和冲突。在视频中，男子喝醉了酒，女子试图劝他冷静下来，但男子情绪激动，最终两人发生了争执，女子离开男子的怀抱，走向一旁的座位。男子则独自坐在地上，显得有些失落和无奈。"
+  },
+  {
+    "video_name": "test_subSummary_42.mp4",
+    "Q": "Please describe the interaction between the man and the woman wearing yellow helmets during the water rafting.",
+    "A": "The woman with the yellow helmet is sitting in the boat, gripping the handle tightly. The man with the yellow helmet is sitting opposite her, paddling. When they reach a narrow section, the water suddenly becomes turbulent, and the boat rushes down the stream. Both fall into the water, and when the water calms down, the man helps the woman to the shore.",
+    "pred": "该段视频中, 有一个男子和一个女子戴着黄色头盔, 他们似乎在进行皮划艇活动。男子站在女子的前面, 女子则坐在皮划艇上。他们看起来很开心, 似乎在享受这个户外活动。"
+  },
+  {
+    "video_name": "test_subSummary_41.mp4",
+    "Q": "Please describe the actions of the woman in the blue sweater on the train.",
+    "A": "The woman in the blue sweater is standing in the corridor, fanning away the smoke with her hand. Feeling sleepy, she squats in the corner and rests her head on her hand.",
+    "pred": "该女子在列车上, 她似乎在与另一人交流。她穿着一件蓝色的毛衣, 低头看着她的手机屏幕。她的表情看起来有些紧张或专注。"
+  },
+  {
+    "video_name": "test_subSummary_40.mp4",
+    "Q": "Please describe what the man in the hat did in the basement after lighting a coat on fire.",
+    "A": "The man in the hat stood up, stomped out the flames with his foot, and then stepped over the coat, observing the smoke.",
+    "pred": "请描述一下这个戴着帽子的男人在地库中做了什么，之后点燃了一件大衣。"
+  },
+  {
+    "video_name": "test_subSummary_7.mp4",
+    "Q": "Please describe the reaction and actions of the elderly woman inside the house when she hears the young man and woman outside by the sink dropping a knife.",
+    "A": "The elderly woman inside the house places her hands on her legs, looks out with concern, and then lowers her head.",
+    "pred": "请描述一下这个老年妇女在听到外面的年轻人在水槽旁边掉刀子时的反应和行动。"
+  },
+  {
+    "video_name": "test_subSummary_2.mp4",
+    "Q": "Please describe what the man smoking in the car did when he noticed a police car approaching and encountered a temporary roadblock ahead.",
+    "A": "The man smoking in the car reluctantly drove forward. Then, he got out of the car to undergo inspection.",
+    "pred": "该男子在车里吸烟时, 注意到有一辆警车靠近, 并遇到了一个临时路障。他似乎在犹豫是否要停车接受检查还是继续前进。"
+  },
+  {
+    "video_name": "test_subSummary_8.mp4",
+    "Q": "Please describe the actions of the elderly woman in floral clothing on the kang as she asks the photographer to take a picture.",
+    "A": "The elderly woman searches through a box, watches the photographer take a picture of her black-and-white photo, bends over to look at the photo through the camera, and talks to the photographer.",
+    "pred": "该老年妇女穿着花卉图案的服装,坐在竹编的长椅上。她向摄影师伸出手指,似乎在请求拍照。"
+  },
+  {
+    "video_name": "test_subSummary_3.mp4",
+    "Q": "Please describe what the man did when he took advantage of the chaos during the police inspection on the road to break through the roadblock and escape.",
+    "A": "The man took advantage of the chaos, pushed open the car door, bent down to pick up a small bag, accelerated to break through the roadblock, and immediately rushed forward.",
+    "pred": "无法确定"
+  },
+  {
+    "video_name": "test_subSummary_39.mp4",
+    "Q": "Please describe what happened to the bearded man before he was hit and stopped by a trio and hung from the roof beam.",
+    "A": "The bearded man was knocked unconscious when another car suddenly hit his while he was driving. The three men then tied up the bearded man and hung him upside down from the roof beam.",
+    "pred": "之前, bearded man was being pursued by a group of men who were trying to capture him. He managed to escape from them and ended up in the alleyway where he encountered a trio of individuals who were also involved in the pursuit. The trio managed to stop him and hang him from a roof beam, presumably to prevent him from escaping again or to confront him directly."
+  },
+  {
+    "video_name": "test_subSummary_38.mp4",
+    "Q": "Please describe the actions of the man in a white hat after the fat man in a black hat next to the railroad tracks strangled a dying man.",
+    "A": "The man in the white hat staggered in front of everyone, pointed at the dead man and said something, and then had a conflict with the others.",
+    "pred": "请描述一下白帽子的男人在黑帽子的男人勒死一个垂死的人之后的行动。"
+  },
+  {
+    "video_name": "test_subSummary_37.mp4",
+    "Q": "Please describe what happened in the hunting field after the man in a hat fired a shot into the sky.",
+    "A": "A man with a scarf around his neck fell to the ground with a leg injury, and the fat man next to him roared at the crowd who had fired the shot.",
+    "pred": "无法确定"
+  },
+  {
+    "video_name": "test_subSummary_36.mp4",
+    "Q": "Please describe what the woman with the sword in the hall did when the woman in blue observed the hall through the door crack.",
+    "A": "The woman with the sword in the hall stood up, picked up the sword beside her, drew it out, and then sheathed it again.",
+    "pred": "请描述一下这个手持剑的女子在大厅里做了什么，当那个穿蓝色衣服的女子通过门缝观察大厅时。"
+  },
+  {
+    "video_name": "test_subSummary_35.mp4",
+    "Q": "Please describe the interaction between the man in black and the soldier at the warehouse gate when he angrily walked up.",
+    "A": "The man in black was at the warehouse gate. After verifying his identity, the soldier respectfully returned his token with both hands.",
+    "pred": "请描述一下黑衣男子在仓库门口与士兵的互动。"
+  },
+  {
+    "video_name": "test_subSummary_34.mp4",
+    "Q": "Please describe what the man in white did after picking up the book and walking to the fire pit in the hall.",
+    "A": "The man in white threw the book into the fire pit.",
+    "pred": "无法理解"
+  },
+  {
+    "video_name": "test_subSummary_33.mp4",
+    "Q": "Please describe the interaction between the woman and the man on the other side of the street after she crossed the main road in the heavy rain.",
+    "A": "The woman and the man looked at each other across the road. The man stared at the woman and threw a rolled-up book. The woman picked up the book, wiped off the rainwater, and examined it carefully. But when she looked up, the man was already gone.",
+    "pred": "该视频是《权力的游戏》的剧集，其中一位女性角色在大雨中穿越街道时，遇到了一位男性角色。他们之间发生了争执，似乎是因为女性角色想要通过街道，而男性角色则认为她应该等待。男性角色还提到了“我不会让你过马路”，暗示他不希望她冒险。这段对话反映了角色之间的紧张关系和冲突。"
+  },
+  {
+    "video_name": "test_subSummary_32.mp4",
+    "Q": "Please describe what happened to the weather after the two warriors clasped their fists in the snow.",
+    "A": "It was still snowing, but the sun began to rise on the horizon.",
+    "pred": "无法确定。"
+  },
+  {
+    "video_name": "test_subSummary_31.mp4",
+    "Q": "Please describe the actions of the man after he and the woman in blue roll down the snow slope.",
+    "A": "After steadying himself, the man immediately crawls towards the woman in front of him.",
+    "pred": "请描述一下这个男人和那个穿蓝色衣服的女人在雪坡上滚下时的行动。"
+  },
+  {
+    "video_name": "test_subSummary_30.mp4",
+    "Q": "Please describe the actions of the man in the red hat when he encounters a seal on the ice field and interacts with the penguins.",
+    "A": "The man in the red hat takes out his phone to take a close-up selfie with the penguins, then joins their group, spreads his arms, kneels on the ground, and waddles forward imitating the penguins.",
+    "pred": "无法描述"
+  },
+  {
+    "video_name": "test_subSummary_9.mp4",
+    "Q": "Please describe the actions of the man in the suit after he returns to the broken house at the zoo and removes the white clothing from the wolf specimen.",
+    "A": "After examining it closely, the man in the suit sits on the bed, gently strokes the clothing in his hand, lies down on his side, and hugs it tightly.",
+    "pred": "无法确定"
+  },
+  {
+    "video_name": "test_subSummary_4.mp4",
+    "Q": "Please describe what the people in the other cars did before the car in the forest couldn't take it anymore and exploded.",
+    "A": "The people in the other cars quickly got out and pulled out the person trapped in the burning car.",
+    "pred": "请描述在森林中的那辆车在无法承受之前做了什么。"
+  },
+  {
+    "video_name": "test_subSummary_5.mp4",
+    "Q": "Please describe the actions of the elderly woman with white hair sitting on the chair as she watches the young man chopping meat.",
+    "A": "The elderly woman with white hair sitting on the chair has one arm resting on the armrest, her fingers clenched into a fist near her cheek, and she is slightly turned towards the young man.",
+    "pred": "请描述一位白发老人坐在椅子上, 观看年轻男子切肉的场景。"
+  },
+  {
+    "video_name": "test_subSummary_29.mp4",
+    "Q": "Please describe what the man in yellow does while the woman in blue writes a message on the poster by the bed.",
+    "A": "The man in yellow sits on a stool watching the woman, then stands up and sits on the bed, moving closer to her.",
+    "pred": "无法确定"
+  },
+  {
+    "video_name": "test_subSummary_28.mp4",
+    "Q": "Please describe the reactions of the man and woman after seeing the little penguin enter the wooden house.",
+    "A": "Upon seeing the little penguin, the man and woman burst into laughter. The penguin waddles to the center, and the man quickly jumps off the table, carefully picking up clothes and approaching the penguin.",
+    "pred": "无法确定"
+  },
+  {
+    "video_name": "test_subSummary_27.mp4",
+    "Q": "Please describe the actions of the long-haired woman after she cuts her hair and takes a quick shower.",
+    "A": "After washing her hair, she wrings out the water, sits on a bench, and wipes her calves.",
+    "pred": "请描述长发女子在剪头发和洗澡后的行为。"
+  },
+  {
+    "video_name": "test_subSummary_26.mp4",
+    "Q": "Describe the actions of the two men when they emerged from the sewer.",
+    "A": "The long-haired man cautiously poked his head out and, after ensuring it was safe, jumped onto the road. The young man then climbed out of the sewer, and both were met with gunfire.",
+    "pred": "两个男人从下水道中出来时, 他们似乎在寻找一个安全的地方躲避追击。"
+  },
+  {
+    "video_name": "test_subSummary_25.mp4",
+    "Q": "Describe in detail the scene where the long-haired man grabs the gun and fights with the prison guard in the prison.",
+    "A": "The long-haired man immediately stood up, grabbed the guard's gun, and kicked the guard's knee forcefully. Then, another man descended from above and killed the guard.",
+    "pred": "请提供更多的上下文和信息，以便我回答您的问题。"
+  },
+  {
+    "video_name": "test_subSummary_24.mp4",
+    "Q": "Describe what the young man did to the middle-aged man after using a bomb on stage.",
+    "A": "The young man pointed a handgun at the middle-aged man who had been knocked down by the explosion. He shot the middle-aged man in the leg and then quickly pulled him up and escaped.",
+    "pred": "该年轻男子在舞台上使用炸弹后, 他似乎在与那位中年男子进行对话。他们之间的互动看起来像是在讨论或交流某事。"
+  },
+  {
+    "video_name": "test_subSummary_23.mp4",
+    "Q": "Describe the interaction between the two men after the woman left the church in the rain.",
+    "A": "The middle-aged man walked down from the church entrance and stood next to the young man. The young man took out a lighter and lit a cigarette. The middle-aged man did not make eye contact with Fang Jie. After taking a puff, the young man spoke to the middle-aged man.",
+    "pred": "请提供更多的上下文和信息，以便我回答您的问题。"
+  },
+  {
+    "video_name": "test_subSummary_22.mp4",
+    "Q": "Describe what the man in the black jacket did after pinning the man with glasses against the door when he came downstairs.",
+    "A": "He yelled at the man with glasses, who then knocked him to the ground. He slowly got up, turned his back to the man with glasses, and said a few words.",
+    "pred": "无法确定"
+  },
+  {
+    "video_name": "test_subSummary_21.mp4",
+    "Q": "Describe the reaction of the curly-haired woman when the man in the black trench coat enters and sees her downing a glass of wine backstage.",
+    "A": "The woman slowly stands up, her eyes never leaving the mirror. Then she gradually turns around, shifting her gaze from the mirror to the man, and they lock eyes.",
+    "pred": "无法理解"
+  },
+  {
+    "video_name": "test_subSummary_20.mp4",
+    "Q": "Please describe the man's reaction to being given food in the trap.",
+    "A": "The man in the trap has a face full of dried mud, he looks up warily. After inspecting the items in the trap, the man starts to drink heavily.",
+    "pred": "无法理解"
+  }
+]
